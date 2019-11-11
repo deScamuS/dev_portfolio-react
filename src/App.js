@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
@@ -15,29 +16,31 @@ class App extends Component {
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen};
     });
   };
 
   backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false });
+    this.setState({sideDrawerOpen: false});
   };
+  
 
   render() {
     let backdrop;
-    let sideDrawer; 
+
     if (this.state.sideDrawerOpen) {
-  backdrop = <Backdrop click={this.backdropClickHandler} />;
+      backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
-      <div style={{ height: "100%" }}>
+      <div style={{height: '100%'}}>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: "4px" }}>
+        <main style={{marginTop: '64px'}}>
           <p>This is the page content!</p>
         </main>
+        
       </div>
     );
   }

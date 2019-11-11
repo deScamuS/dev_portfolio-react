@@ -1,11 +1,11 @@
-side-drawer {
+.side-drawer {
   height: 100%;
-  background:  white;
+  background:  #36C5F0;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
   max-width: 400px;
   z-index: 200;
   transform: translateX(-100%);
@@ -22,8 +22,10 @@ side-drawer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  }
 
+  .nav-link{
+margin: 0.5rem 0;
 }
 
 .side-drawer li {
@@ -31,9 +33,9 @@ side-drawer {
 }
 
 .side-drawer a {
-  color: #f9f9f9;
+  color :rgb(97, 88, 88);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 .side-drawer a:hover,

@@ -1,3 +1,4 @@
-body {
-  background: #4f4f4f;
+.about {
+  position: relative; 
+  z-index: -22; 
 }

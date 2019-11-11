@@ -3,8 +3,9 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: auto; 
   padding: 3px;
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background: #36C5F0;
 }
 
 .toolbar__navigation {
