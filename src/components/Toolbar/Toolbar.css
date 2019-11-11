@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #521751;
-  height: 56px;
+  padding: 16px;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 }
 
 .toolbar__navigation {
@@ -19,9 +19,13 @@
 }
 
 .toolbar__logo a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.toolbar__logo a:hover {
+  color: #fa3f3f;
 }
 
 .spacer {
@@ -46,7 +50,7 @@
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-  color: #fa923f;
+  color: #fa3f3f;
 }
 
 @media (max-width: 768px) {

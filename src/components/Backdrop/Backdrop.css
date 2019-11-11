@@ -4,6 +4,6 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
   z-index: 100;
 }
