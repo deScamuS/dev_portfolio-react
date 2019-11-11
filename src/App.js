@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import './app.css'
 import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
@@ -25,17 +26,17 @@ class App extends Component {
 
   render() {
     let backdrop;
-
+    let sideDrawer; 
     if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
+  backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
       <div style={{ height: "100%" }}>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-
-        <main style={{ marginTop: "63px" }}>
+        <main style={{ marginTop: "4px" }}>
+          <p>This is the page content!</p>
         </main>
       </div>
     );
