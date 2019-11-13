@@ -9,15 +9,15 @@ import Contact from "./components/pages/Contact";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
-
 class App extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false // this is our intial state..
   };
+  // FUNCTIONS
 
   drawerToggleClickHandler = () => {
     this.setState(prevState => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+     return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
@@ -25,16 +25,10 @@ class App extends Component {
     this.setState({ sideDrawerOpen: false });
   };
 
-  drawerClickHandler = () => {
-    this.setState({ SideDrawerOpen: false });
-  };
-
+  //events ares called and clicked/ child components are rendered by the APP component
+  
   render() {
     let backdrop;
-    let drawer;
-    if (this.state.sideDrawerOpen) {
-      drawer = <SideDrawer click={this.drawerCLickHandler} />;
-    }
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
@@ -44,10 +38,8 @@ class App extends Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: "64px" }}>
-          <p>This is the page content!</p>
-        </main>
-      </div>
+        <main style={{ marginTop: "64px" }}></main>
+        </div>
     );
   }
 }

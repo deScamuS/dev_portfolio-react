@@ -8,39 +8,44 @@ import "./toolbar.css";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import Home from "../pages/Home";
 
 const Toolbar = props => {
   return (
     <Router>
       const toolbar = props => (
-      <header className='toolbar'>
-        <nav className='toolbar__navigation'>
-          <div className='toolbar__toggle-button'>
+      <header className="toolbar">
+        <nav className="toolbar__navigation">
+          <div className="toolbar__toggle-button">
             <DrawerToggleButton click={props.drawerClickHandler} />
           </div>
-          <div className='toolbar__logo'>
-            <a href='/'>THE LOGO</a>
+          <div className="toolbar__logo">
+            <img src="/" alt="" />
           </div>
-          <div className='spacer' />
+          <div className="spacer" />
 
-          <div className='toolbar_navigation-items'>
+          <div className="toolbar_navigation-items">
             <ul>
               <li>
-                <a href='/'>About</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href='/projects'>Projects</a>
+                <a href="/about">About</a>
               </li>
               <li>
-                <a href='/contact'>Contact</a>
+                <a href="/projects">Projects</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
         <Switch>
-          <Route exact path='/' component={About} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/contact' component={Contact} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </header>
     </Router>

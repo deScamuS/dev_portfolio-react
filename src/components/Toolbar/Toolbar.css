@@ -16,7 +16,7 @@
 }
 
 .toolbar__logo {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .toolbar__logo a {
@@ -26,8 +26,9 @@
 }
 
 .toolbar__logo a:hover {
-  color: #fa3f3f;
+  color: #bde4fd;
 }
+
 
 .spacer {
   flex: 1;
@@ -51,7 +52,7 @@
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-  color: #fa3f3f;
+  color: #bde4fd;
 }
 
 @media (max-width: 768px) {

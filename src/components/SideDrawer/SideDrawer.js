@@ -1,13 +1,14 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Link } from "react-router-dom";
 import "./sideDrawer.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import Home from '../pages/Home'
 
 const SideDrawer = props => {
   let drawerClasses = "side-drawer";
@@ -18,22 +19,26 @@ const SideDrawer = props => {
     <Router>
       <nav className={drawerClasses}>
         <ul>
-          <li className='path-link'>
-            <Link to='/'>About</Link>
+          <li classname="link">
+            <a href="/">Home</a>
           </li>
-          <li className='path-link'>
-            <Link to='/projects'>Projects</Link>
+          <li classname="link">
+            <a href="/about">About</a>
           </li>
-          <li className='path-link'>
-            <Link to='/contact'>Contact</Link>
+          <li classname="link">
+            <a href="/projects">Projects</a>
+          </li>
+          <li classname="link">
+            <a href="/contact">Contact</a>
           </li>
         </ul>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
       </nav>
-      <Switch>
-        <Route exact path='/' component={About} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/contact' component={Contact} />
-      </Switch>
     </Router>
   );
 };

@@ -1,4 +1,8 @@
-.projects {
-  position: relative; 
-  z-index: -22; 
+body {
+  margin-top: 64px; 
+  display: flex; 
+  justify-content: flex-end;
+  flex-direction: column; 
+  height: 100%;
+  
 }
