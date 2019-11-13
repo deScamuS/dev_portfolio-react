@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "./home.css";
 
+
 class Home extends Component {
   render() {
     return (
-      <main>
+      <div className='Home'>
         <React.Fragment>
         <div class="intro">Hello, I'm Michael</div>
-          <div class="tagline">Engineer | Coder | Bleh</div>
+          <div class="tagline"> Dev | Coder | Me</div>
           <div class="icons-social">
             <a href="https://github.com/">
               <i class="fab fa-github"></i>
@@ -21,9 +22,12 @@ class Home extends Component {
             <a href="https://facebook.com">
               <i class="fab fa-facebook"></i>
             </a>
+           
+          
+         
           </div>
         </React.Fragment>
-      </main>
+      </div>
     );
   }
 }

@@ -13,7 +13,6 @@ import Home from "../pages/Home";
 const Toolbar = props => {
   return (
     <Router>
-      const toolbar = props => (
       <header className="toolbar">
         <nav className="toolbar__navigation">
           <div className="toolbar__toggle-button">

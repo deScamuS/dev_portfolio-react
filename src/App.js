@@ -9,6 +9,8 @@ import Contact from "./components/pages/Contact";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+import Projects2 from "./components/pages/TabNation";
+
 class App extends Component {
   state = {
     sideDrawerOpen: false // this is our intial state..
@@ -17,7 +19,7 @@ class App extends Component {
 
   drawerToggleClickHandler = () => {
     this.setState(prevState => {
-     return { sideDrawerOpen: !prevState.sideDrawerOpen };
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
@@ -26,7 +28,7 @@ class App extends Component {
   };
 
   //events ares called and clicked/ child components are rendered by the APP component
-  
+
   render() {
     let backdrop;
 
@@ -38,8 +40,10 @@ class App extends Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: "64px" }}></main>
-        </div>
+        <main style={{ marginTop: "64px" }}>
+         
+        </main>
+      </div>
     );
   }
 }

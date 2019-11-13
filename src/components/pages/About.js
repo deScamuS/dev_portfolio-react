@@ -2,21 +2,15 @@
 import React from "react";
 import "./about.css";
 import Container from "@material-ui/core/Container";
- 
 
 const About = () => {
   return (
-    <div>
+    <div className="About">
       <Container maxWidth="sm">
-        <img src='/' alt='' />
-        <div className='bio'>
-          <h1>Hello</h1>
-          
-          
-          
+        <img src="/" alt="" />
+        <div className="bio">
+          <h1>About</h1>
         </div>
-
-      
       </Container>
     </div>
   );
