@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
@@ -9,8 +10,6 @@ import Contact from "./components/pages/Contact";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
-import Projects2 from "./components/pages/TabNation";
-
 class App extends Component {
   state = {
     sideDrawerOpen: false // this is our intial state..

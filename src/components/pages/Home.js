@@ -1,32 +1,22 @@
 import React, { Component } from "react";
 import "./home.css";
 
-
 class Home extends Component {
   render() {
     return (
-      <div className='Home'>
-        <React.Fragment>
+      <div className="Home">
         <div class="intro">Hello, I'm Michael</div>
-          <div class="tagline"> Dev | Coder | Me</div>
-          <div class="icons-social">
-            <a href="https://github.com/">
-              <i class="fab fa-github"></i>
+        <div class="tagline"> </div>
+        <div class="icons-social">
+          <a href="https://github.com/deScamuS/">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com">
+            <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://stackoverflow.com">
-              <i class="fab fa-stack-overflow"></i>
-            </a>
-            <a href="https://www.linkedin.com">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://facebook.com">
-              <i class="fab fa-facebook"></i>
-            </a>
-           
-          
-         
           </div>
-        </React.Fragment>
+        
       </div>
     );
   }

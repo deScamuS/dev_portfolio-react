@@ -1,4 +1,11 @@
 .contact {
-  position: relative; 
-  z-index: -22; 
+  display: flex; 
+  justify-content: center;
+  align-content: center;
+  
+}
+
+
+span {
+  color: rgb(31, 121, 173);
 }
