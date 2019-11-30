@@ -10,6 +10,7 @@ import Contact from "./components/pages/Contact";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+
 class App extends Component {
   state = {
     sideDrawerOpen: false // this is our intial state..
@@ -24,7 +25,7 @@ class App extends Component {
 
   backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
-  };
+  }
 
   //events ares called and clicked/ child components are rendered by the APP component
 
@@ -40,11 +41,11 @@ class App extends Component {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <main style={{ marginTop: "64px" }}>
-         
         </main>
       </div>
     );
   }
 }
+
 
 export default App;

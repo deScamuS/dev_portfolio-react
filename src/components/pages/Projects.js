@@ -3,10 +3,11 @@ import React, { Component } from "react";
 import "react-mdl/extra/material.css";
 import "react-mdl/extra/material.js";
 import "./projects.css";
-import logo from "./img/nasa.png";
-import image from "./img/jscalc.jpeg";
-import image2 from "./img/weather.jpg";
-import image3 from "./img/booklist.jpg";
+import logo from "../img/nasa.png";
+import image from "../img/jscalc.jpeg";
+import image2 from "../img/weather.jpg";
+import image3 from "../img/booklist.jpg";
+
 import {
   Tabs,
   Tab,
@@ -146,11 +147,9 @@ export default class Projects extends Component {
         </Tabs>
         <Grid className="projects">
           <Cell col={12}>
-            <div className="content">{this.toggleContent()}></div>
+            <div className="content">{this.toggleContent()}</div>
           </Cell>
         </Grid>
-        <h4>Portfolio coded using ReactJS & MaterialUI</h4>
-        <p style={{ color: "red" }}>CODE</p>
       </div>
     );
   }
