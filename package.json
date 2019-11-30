@@ -1,7 +1,7 @@
 {
   "name": "dev_portfolio",
   "version": "0.1.0",
-  "homepage": "https://deScamuS.github.io/dev_portfolio-react",
+  "homepage": "https://deScamuS.github.io/dev_portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.6.0",
