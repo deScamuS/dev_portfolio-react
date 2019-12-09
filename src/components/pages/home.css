@@ -1,5 +1,7 @@
-html {
+html, body {
   font-family: "Roboto", sans-serif;
+ 
+
 }
 
 @media (min-width: 576px) {
