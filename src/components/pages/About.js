@@ -17,6 +17,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function About() {
   const classes = useStyles();
+
+  
   return (
     <div className='about'>
       <Paper className={classes.root} elevation={5}>

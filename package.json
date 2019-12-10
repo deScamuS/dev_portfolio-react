@@ -1,7 +1,7 @@
 {
   "name": "dev_portfolio",
   "version": "0.1.0",
-  "homepage": "https://deScamuS.github.io/dev_portfolio/",
+  "homepage": "https://github_deScamuS.github.io/dev_portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.6.0",
@@ -10,12 +10,16 @@
     "framer": "^1.1.5",
     "framer-motion": "^1.6.15",
     "material-design-lite": "^1.3.0",
+    "prop-types": "^15.7.2",
+    "radium": "^0.26.0",
     "react": "^16.11.0",
+    "react-animations": "^1.0.0",
     "react-dom": "^16.11.0",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-three-fiber": "^3.0.14",
+    "styled-components": "^4.4.1",
     "typeface-roboto": "0.0.75"
   },
   "scripts": {
