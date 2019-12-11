@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { BrowserRouter as Router , Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import "./toolbar.css";
@@ -42,10 +42,13 @@ const Toolbar = props => {
         </nav>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+          <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
+          <Route
+            path={`${process.env.PUBLIC_URL}/projects`}
+            component={Projects}
+          />
+          <Route path={`${process.env.PUBLIC_URL}/contact`} component={Contact} />
+        </Switch>s
       </header>
     </Router>
   );
