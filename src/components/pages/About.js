@@ -11,16 +11,14 @@ const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(6, 4),
     color: "rgb(31, 121, 173)"
-    
   }
 }));
 
 export default function About() {
   const classes = useStyles();
 
-  
   return (
-    <div className='about'>
+    <div className="about">
       <Paper className={classes.root} elevation={5}>
         <div className="">
           <Container maxWidth="md">
@@ -38,9 +36,6 @@ export default function About() {
           </Container>
         </div>
       </Paper>
-      <Typography>
-        
-      </Typography>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <div className="container">
+    <div className="container" style={{backgroundColor: "pink"}}>
       <div className="contact">
         <main id="contact">
           <h1 className="lg-heading">
