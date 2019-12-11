@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/deScamuS/dev_portfolio/static/css/main.24d13f24.chunk.css",
-    "main.js": "/deScamuS/dev_portfolio/static/js/main.d3ecd4f4.chunk.js",
-    "main.js.map": "/deScamuS/dev_portfolio/static/js/main.d3ecd4f4.chunk.js.map",
-    "runtime-main.js": "/deScamuS/dev_portfolio/static/js/runtime-main.b2073d74.js",
-    "runtime-main.js.map": "/deScamuS/dev_portfolio/static/js/runtime-main.b2073d74.js.map",
-    "static/css/2.559fd73f.chunk.css": "/deScamuS/dev_portfolio/static/css/2.559fd73f.chunk.css",
-    "static/js/2.17394504.chunk.js": "/deScamuS/dev_portfolio/static/js/2.17394504.chunk.js",
-    "static/js/2.17394504.chunk.js.map": "/deScamuS/dev_portfolio/static/js/2.17394504.chunk.js.map",
-    "index.html": "/deScamuS/dev_portfolio/index.html",
-    "precache-manifest.c64fed720839b7bf331e344773eb6b24.js": "/deScamuS/dev_portfolio/precache-manifest.c64fed720839b7bf331e344773eb6b24.js",
-    "service-worker.js": "/deScamuS/dev_portfolio/service-worker.js",
-    "static/css/2.559fd73f.chunk.css.map": "/deScamuS/dev_portfolio/static/css/2.559fd73f.chunk.css.map",
-    "static/css/main.24d13f24.chunk.css.map": "/deScamuS/dev_portfolio/static/css/main.24d13f24.chunk.css.map",
-    "static/media/booklist.jpg": "/deScamuS/dev_portfolio/static/media/booklist.48034d5d.jpg",
-    "static/media/jscalc.jpeg": "/deScamuS/dev_portfolio/static/media/jscalc.0d327c70.jpeg",
-    "static/media/nasa.png": "/deScamuS/dev_portfolio/static/media/nasa.f66789b2.png",
-    "static/media/weather.jpg": "/deScamuS/dev_portfolio/static/media/weather.9be22bee.jpg"
+    "main.css": "/dev_portfolio/static/css/main.24d13f24.chunk.css",
+    "main.js": "/dev_portfolio/static/js/main.5969c60b.chunk.js",
+    "main.js.map": "/dev_portfolio/static/js/main.5969c60b.chunk.js.map",
+    "runtime-main.js": "/dev_portfolio/static/js/runtime-main.0dccc465.js",
+    "runtime-main.js.map": "/dev_portfolio/static/js/runtime-main.0dccc465.js.map",
+    "static/css/2.559fd73f.chunk.css": "/dev_portfolio/static/css/2.559fd73f.chunk.css",
+    "static/js/2.17394504.chunk.js": "/dev_portfolio/static/js/2.17394504.chunk.js",
+    "static/js/2.17394504.chunk.js.map": "/dev_portfolio/static/js/2.17394504.chunk.js.map",
+    "index.html": "/dev_portfolio/index.html",
+    "precache-manifest.ab601b2c7dae7487daeff264f57d726f.js": "/dev_portfolio/precache-manifest.ab601b2c7dae7487daeff264f57d726f.js",
+    "service-worker.js": "/dev_portfolio/service-worker.js",
+    "static/css/2.559fd73f.chunk.css.map": "/dev_portfolio/static/css/2.559fd73f.chunk.css.map",
+    "static/css/main.24d13f24.chunk.css.map": "/dev_portfolio/static/css/main.24d13f24.chunk.css.map",
+    "static/media/booklist.jpg": "/dev_portfolio/static/media/booklist.48034d5d.jpg",
+    "static/media/jscalc.jpeg": "/dev_portfolio/static/media/jscalc.0d327c70.jpeg",
+    "static/media/nasa.png": "/dev_portfolio/static/media/nasa.f66789b2.png",
+    "static/media/weather.jpg": "/dev_portfolio/static/media/weather.9be22bee.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b2073d74.js",
+    "static/js/runtime-main.0dccc465.js",
     "static/css/2.559fd73f.chunk.css",
     "static/js/2.17394504.chunk.js",
     "static/css/main.24d13f24.chunk.css",
-    "static/js/main.d3ecd4f4.chunk.js"
+    "static/js/main.5969c60b.chunk.js"
   ]
 }
