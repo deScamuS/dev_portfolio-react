@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dev_portfolio/static/css/main.24d13f24.chunk.css",
-    "main.js": "/dev_portfolio/static/js/main.9915e543.chunk.js",
-    "main.js.map": "/dev_portfolio/static/js/main.9915e543.chunk.js.map",
+    "main.css": "/dev_portfolio/static/css/main.ce3313e7.chunk.css",
+    "main.js": "/dev_portfolio/static/js/main.6e7195c1.chunk.js",
+    "main.js.map": "/dev_portfolio/static/js/main.6e7195c1.chunk.js.map",
     "runtime-main.js": "/dev_portfolio/static/js/runtime-main.0dccc465.js",
     "runtime-main.js.map": "/dev_portfolio/static/js/runtime-main.0dccc465.js.map",
-    "static/css/2.559fd73f.chunk.css": "/dev_portfolio/static/css/2.559fd73f.chunk.css",
-    "static/js/2.04b59f88.chunk.js": "/dev_portfolio/static/js/2.04b59f88.chunk.js",
-    "static/js/2.04b59f88.chunk.js.map": "/dev_portfolio/static/js/2.04b59f88.chunk.js.map",
+    "static/css/2.ceea6fac.chunk.css": "/dev_portfolio/static/css/2.ceea6fac.chunk.css",
+    "static/js/2.4c4e205b.chunk.js": "/dev_portfolio/static/js/2.4c4e205b.chunk.js",
+    "static/js/2.4c4e205b.chunk.js.map": "/dev_portfolio/static/js/2.4c4e205b.chunk.js.map",
     "index.html": "/dev_portfolio/index.html",
-    "precache-manifest.2dff6b5ae11c1a92f498e8d9c3af3072.js": "/dev_portfolio/precache-manifest.2dff6b5ae11c1a92f498e8d9c3af3072.js",
+    "precache-manifest.2fbba482edc7865f4f1325eb61aab9ac.js": "/dev_portfolio/precache-manifest.2fbba482edc7865f4f1325eb61aab9ac.js",
     "service-worker.js": "/dev_portfolio/service-worker.js",
-    "static/css/2.559fd73f.chunk.css.map": "/dev_portfolio/static/css/2.559fd73f.chunk.css.map",
-    "static/css/main.24d13f24.chunk.css.map": "/dev_portfolio/static/css/main.24d13f24.chunk.css.map",
+    "static/css/2.ceea6fac.chunk.css.map": "/dev_portfolio/static/css/2.ceea6fac.chunk.css.map",
+    "static/css/main.ce3313e7.chunk.css.map": "/dev_portfolio/static/css/main.ce3313e7.chunk.css.map",
     "static/media/booklist.jpg": "/dev_portfolio/static/media/booklist.48034d5d.jpg",
     "static/media/jscalc.jpeg": "/dev_portfolio/static/media/jscalc.0d327c70.jpeg",
     "static/media/nasa.png": "/dev_portfolio/static/media/nasa.f66789b2.png",
@@ -20,9 +20,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0dccc465.js",
-    "static/css/2.559fd73f.chunk.css",
-    "static/js/2.04b59f88.chunk.js",
-    "static/css/main.24d13f24.chunk.css",
-    "static/js/main.9915e543.chunk.js"
+    "static/css/2.ceea6fac.chunk.css",
+    "static/js/2.4c4e205b.chunk.js",
+    "static/css/main.ce3313e7.chunk.css",
+    "static/js/main.6e7195c1.chunk.js"
   ]
 }
