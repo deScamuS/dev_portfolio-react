@@ -47,8 +47,12 @@ const Toolbar = props => {
             path={`${process.env.PUBLIC_URL}/projects`}
             component={Projects}
           />
-          <Route path={`${process.env.PUBLIC_URL}/contact`} component={Contact} />
-        </Switch>s
+          <Route
+            path={`${process.env.PUBLIC_URL}/contact`}
+            component={Contact}
+          />
+        </Switch>
+        s
       </header>
     </Router>
   );

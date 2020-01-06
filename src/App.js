@@ -1,17 +1,19 @@
-/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+
+
 import React, { Component } from "react";
-import { HashRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./app.css";
-import About from "./components/pages/About";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from './Nav'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from "./components/pages/Home";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
-import Toolbar from "./components/Toolbar/Toolbar";
-import SideDrawer from "./components/SideDrawer/SideDrawer";
-import Backdrop from "./components/Backdrop/Backdrop";
 
-class App extends Component {
+export default class App extends Component {
+ 
   state = {
     sideDrawerOpen: false // this is our intial state..
   };
@@ -25,27 +27,53 @@ class App extends Component {
 
   backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
-  }
+  };
 
   //events ares called and clicked/ child components are rendered by the APP component
 
+ 
+ 
+ 
   render() {
-    let backdrop;
-
-    if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
-    }
     return (
-      <div style={{ height: "100%" }}>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
-        <main style={{ marginTop: "64px" }}>
-        </main>
+      <div>
+        <Router>
+          <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <a className="navbar-brand" href="https://nasa.gov" target="_blank">
+                <img src="/" alt="" />
+              </a>
+              <Link to="/" className="navbar-brand">
+                Home
+            </Link>
+              <div className="collapse nav-collapse">
+                <ul className="navbar-nav mr-auto">
+                  <li className="navbar-item">
+                    <Link to="/" className="nav-link">
+                      Projects
+                  </Link>
+                  </li>
+                  <li className="navbar-item">
+                    <Link to="/create" className="nav-link">
+                      Contact
+                  </Link>
+                  </li>
+                  <li className="navbar-item">
+                    <Link to="/:id" className="nav-link">
+                      
+                  </Link>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <Route exact path="/" component={Home} />
+            <Route path="/edit/:id" component={Projects} />
+            <Route path="/create" component={Contact} />
+          </div>
+        </Router>
+        <Nav />
       </div>
-    );
+    )
   }
 }
-
-
-export default App;

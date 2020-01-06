@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, "build")));
     return res.render('react_page', {html: html})
   })
 })*/
-app.get("/*", function(req, res) {
+app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 app.listen(3000);

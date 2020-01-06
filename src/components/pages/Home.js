@@ -13,7 +13,7 @@ class Home extends Component {
             <i className="fab fa-github"></i>
           </a>
 
-          <a href="https://www.linkedin.com">
+          <a href="https://www.linkedin.com/in/descamusmichael/">
             <i className="fab fa-linkedin"></i>
           </a>
         </div>
