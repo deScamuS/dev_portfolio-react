@@ -17,7 +17,7 @@ export default class App extends Component {
   state = {
     sideDrawerOpen: false // this is our intial state..
   };
-  // FUNCTIONS
+  // FUNCTIONS b
 
   drawerToggleClickHandler = () => {
     this.setState(prevState => {
@@ -40,9 +40,7 @@ export default class App extends Component {
         <Router>
           <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <a className="navbar-brand" href="https://nasa.gov" target="_blank">
-                <img src="/" alt="" />
-              </a>
+              
               <Link to="/" className="navbar-brand">
                 Home
             </Link>
@@ -54,12 +52,12 @@ export default class App extends Component {
                   </Link>
                   </li>
                   <li className="navbar-item">
-                    <Link to="/create" className="nav-link">
+                    <Link to="/projects" className="nav-link">
                       Contact
                   </Link>
                   </li>
                   <li className="navbar-item">
-                    <Link to="/:id" className="nav-link">
+                    <Link to="/contact" className="nav-link">
                       
                   </Link>
                   </li>
@@ -67,9 +65,9 @@ export default class App extends Component {
               </div>
             </nav>
 
-            <Route exact path="/" component={Home} />
-            <Route path="/edit/:id" component={Projects} />
-            <Route path="/create" component={Contact} />
+            <Route  exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+            <Route path={process.env.PUBLIC_URL + "/projects"} component={Projects} />
+            <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
           </div>
         </Router>
         <Nav />
