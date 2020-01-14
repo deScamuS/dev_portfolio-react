@@ -1,20 +1,88 @@
 html,
 body {
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.about {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 2rem;
+  height: 100%;
 }
-img {
-  display: cover;
-  width: 100%;
-  height: auto;
+
+@media (min-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.icons-social i {
+  font-size: 3em;
+}
+
+/* Custom Styles */
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 0;
   margin: 0;
-  padding: 12px;
+  text-align: center;
+  background: #a73737;
+
+  background-repeat: no-repeat;
+  color: #e2d1c3;
+}
+
+.Home > .intro {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.75em;
+  font-weight: 600;
+}
+
+.Home > .tagline {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 100;
+}
+
+.icons-social a {
+  color: #e2d1c3;
+}
+
+.icons-social a svg path {
+  fill: #fafafa;
+}
+
+.icons-social i {
+  padding: 10px;
+}
+.icons-social :hover {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.devto {
+  margin-bottom: -0.2rem;
+}
+
+.devto svg {
+  margin-bottom: -0.2rem;
+  margin-left: 0.675rem;
+  width: 2.65rem;
+  height: 2.65rem;
 }

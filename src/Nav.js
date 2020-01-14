@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Toolbar from './components/Toolbar/Toolbar'
-import Backdrop from './components/Backdrop/Backdrop'
-import SideDrawer from './components/SideDrawer/SideDrawer'
+import Toolbar from './Toolbar/Toolbar'
+import Backdrop from './Backdrop/Backdrop'
+import SideDrawer from './SideDrawer/SideDrawer'
 
 
 

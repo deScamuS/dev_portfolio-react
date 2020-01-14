@@ -7,7 +7,7 @@ import logo from "../img/nasa.png";
 import image from "../img/jscalc.jpeg";
 import image2 from "../img/weather.jpg";
 import image3 from "../img/booklist.jpg";
-
+import Nav from "../Nav";
 import {
   Tabs,
   Tab,
@@ -36,29 +36,32 @@ export default class Projects extends Component {
   toggleContent = () => {
     if (this.state.activeTab === 0) {
       return (
-        <Card shadow={6} style={{ minWidth: "450", margin: "auto" }}>
-          <a href="https://descamus.github.io/nasa-api_react">
-            <CardTitle
-              style={{
-                color: "#fff",
-                height: "300px",
-                backgroundImage:
-                  "linear-gradient(60deg, #29323c 0%, #485563 100%)"
-              }}
-            >
-              <img src={logo} alt="none" />
-            </CardTitle>
-          </a>
-          <CardText style={{ fontSize: "1.5rem" }}>
-            {""}
-            Picture of the Day
-          </CardText>
-          <CardActions border>
-            <Button colored>
-              <a href="https://github.com/deScamuS/nasa-api_react">code</a>
-            </Button>
-          </CardActions>
-        </Card>
+        <>
+          <Nav />
+          <Card shadow={6} style={{ minWidth: "450", margin: "auto" }}>
+            <a href="https://descamus.github.io/nasa-api_react">
+              <CardTitle
+                style={{
+                  color: "#fff",
+                  height: "300px",
+                  backgroundImage:
+                    "linear-gradient(60deg, #29323c 0%, #485563 100%)"
+                }}
+              >
+                <img src={logo} alt="none" />
+              </CardTitle>
+            </a>
+            <CardText style={{ fontSize: "1.5rem" }}>
+              {""}
+              Picture of the Day
+            </CardText>
+            <CardActions border>
+              <Button colored>
+                <a href="https://github.com/deScamuS/nasa-api_react">code</a>
+              </Button>
+            </CardActions>
+          </Card>
+        </>
       );
     } else if (this.state.activeTab === 1) {
       return (

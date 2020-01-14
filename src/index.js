@@ -1,14 +1,26 @@
 /* eslint-disable no-unused-vars */
+
+
+
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import App from "./App";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { ThemeProvider } from "@material-ui/core/styles";
-import theme from "./theme";
-ReactDOM.render(
-  <ThemeProvider theme={theme}>
+import Routing from "./Routing";
+
+
+ReactDOM.render(Routing, document.getElementById("root"));
+
+
+
+
+
+ReactDOM.render(<Routing/>, document.getElementById("root"));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+/*  <ThemeProvider theme={theme}>
     <CssBaseline />
     <Router>
       <App />
@@ -16,7 +28,4 @@ ReactDOM.render(
   </ThemeProvider>,
   document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+*/

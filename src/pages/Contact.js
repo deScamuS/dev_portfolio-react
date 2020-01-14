@@ -1,8 +1,10 @@
 import React from "react";
 import "./contact.css";
-
+import Nav from '../Nav'
 const Contact = () => {
   return (
+    <>
+      <Nav/>
     <div className="container" style={{backgroundColor: "pink"}}>
       <div className="contact">
         <main id="contact">
@@ -33,7 +35,8 @@ const Contact = () => {
           </div>
         </main>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 export default Contact;

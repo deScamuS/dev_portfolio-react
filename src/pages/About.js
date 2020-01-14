@@ -26,7 +26,7 @@ export default function About() {
               <h1>About</h1>
             </Typography>
             <Typography variant="h6" component="h4">
-              Hey, I'm Michael and I currenty reside in Minneapolis, MN. I've
+              Hey, I'm Michael and I currenty reside in Minneapolis, MN and I've
               lived and worked in Peru, Nepal, Seattle, & LA. I developed a
               passion for tech, and have a vociferous appetite for developing my
               skill-sets and capabilities to positively contribute to teams in
