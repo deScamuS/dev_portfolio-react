@@ -1,18 +1,16 @@
 /* eslint-disable no-unused-vars */
 
-
-
 import React from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import Home from './Home'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
+import Home from "./Home";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 function App() {
   return (
-    <Router basename="dev_portfolio">
+    <Router basename="/dev_portfolio">
       <div>
         <nav>
           <ul>
@@ -27,7 +25,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/projects/" component={Projects} />
-          <Route path="/contact/" component={Contact}/>
+          <Route path="/contact/" component={Contact} />
         </Switch>
       </div>
     </Router>
