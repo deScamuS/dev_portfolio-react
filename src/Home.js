@@ -2,18 +2,12 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 
-
 import React, { Component } from "react";
-import Nav from './Nav'
-import Backdrop from './Backdrop/Backdrop'
-import './app.css'
+import Nav from "./Nav";
+import Backdrop from "./Backdrop/Backdrop";
+import "./app.css";
 
-
-
-
-
-
-export default class App extends Component {
+export default class Home extends Component {
   state = {
     sideDrawerOpen: false
   };
@@ -39,7 +33,7 @@ export default class App extends Component {
         {backdrop}
         <div style={{ height: "100%", marginTop: "-64px" }}>
           <main className="Home" style={{ marginTop: "64px" }}>
-              <br/>
+            <br />
             <div
               style={{ fontFamily: "Alcubierre, sans serif" }}
               className="intro"
